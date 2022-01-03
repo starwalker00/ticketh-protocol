@@ -10,11 +10,18 @@ contract TicketOffice1 is ERC721 {
 
     constructor() ERC721("TicketOffice1", "TO1") {}
 
-    function mintFirst() public {
+    function mintFirst() public returns (uint256) {
         require(_tokenIds.current() == 0, "First token already minted");
-        _tokenIds.reset();
-        uint256 firstItemId = _tokenIds.current();
-        _safeMint(msg.sender, firstItemId);
         _tokenIds.increment();
+        uint256 firstItemId = _tokenIds.current();
+        _mint(msg.sender, firstItemId);
+        return firstItemId;
+    }
+
+    function buyTicket() public returns (uint256) {
+        _tokenIds.increment();
+        uint256 newItemId = _tokenIds.current();
+        _mint(msg.sender, newItemId);
+        return newItemId;
     }
 }
