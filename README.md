@@ -2,6 +2,7 @@
 
 Plugin to deploy "like in truffle" (recommended by hardhat) : 
 https://github.com/wighawag/hardhat-deploy/tree/master
+https://github.com/wighawag/tutorial-hardhat-deploy
 https://hardhat.org/guides/deploying.html
 
 Use "hh" as hardhat shortcut : 
@@ -9,6 +10,10 @@ https://hardhat.org/guides/shorthand.html
 
 OpenZeppelin NFT contract API :
 https://docs.openzeppelin.com/contracts/4.x/api/token/erc721
+
+# Tips
+
+Deploy a local blockchain akin to Ganache with ``npx hardhat node`` or ``hh node`` : https://hardhat.org/hardhat-network/
 
 # Basic Sample Hardhat Project
 
