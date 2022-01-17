@@ -15,8 +15,9 @@ const config: HardhatUserConfig = {
     },
   },
   namedAccounts: {
-    deployer: 0,
-    buyer: 1,
+    deployerAddress: 0,
+    buyer1Address: 1,
+    randomAddress: 12
   },
 };
 export default config;
