@@ -15,6 +15,8 @@ https://docs.openzeppelin.com/contracts/4.x/api/token/erc721
 
 Deploy a local blockchain akin to Ganache with ``npx hardhat node`` or ``hh node`` : https://hardhat.org/hardhat-network/
 
+To see a NFT in metamask, add the NFT contract address as a token with a precision of 0.
+
 # Basic Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
