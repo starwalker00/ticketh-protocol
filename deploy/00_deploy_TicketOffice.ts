@@ -16,10 +16,16 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   transferDeadline.setMinutes(transferDeadline.getMinutes() + minutes);
   console.log(transferDeadline.toLocaleString())
 
+  let ticketPrice = hre.ethers.utils.parseEther("1.0");
+  let value = hre.ethers.utils.parseEther("0.0");
+
+  // console.log(`{deployerAddress : ${deployerAddress}}`)
+
   await deploy('TicketOffice1', {
     from: deployerAddress,
     log: true,
-    args: [transferDeadline.getTime()],
+    args: [ticketPrice, transferDeadline.getTime()],
+    value: value
   });
 };
 export default func;
