@@ -1,9 +1,11 @@
 # Additions
 
 Plugin to deploy "like in truffle" (recommended by hardhat) : 
-https://github.com/wighawag/hardhat-deploy/tree/master
-https://github.com/wighawag/tutorial-hardhat-deploy
-https://hardhat.org/guides/deploying.html
+
+- https://github.com/wighawag/hardhat-deploy/tree/master
+- https://github.com/wighawag/tutorial-hardhat-deploy
+- https://github.com/wighawag/hardhat-deploy/tree/master#deploy-scripts
+- https://hardhat.org/guides/deploying.html
 
 Use "hh" as hardhat shortcut : 
 https://hardhat.org/guides/shorthand.html
